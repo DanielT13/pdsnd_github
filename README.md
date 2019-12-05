@@ -12,5 +12,11 @@ In this project, the student had to make use of Python to explore data related t
 * new_york_city.csv
 * chicago.csv
 
+### Requirements
+This program was written in Python (version 3.7.1) and relies on the following libraries:
+
+* pandas==0.23.4
+* numpy==1.15.4
+
 ### Credits
 Tchalim M. Daniel
