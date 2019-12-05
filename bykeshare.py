@@ -266,7 +266,7 @@ def raw_data(df, mark_place):
 
     # each loop displays 5 lines of raw data
     while True:
-        for i in range(mark_place, len(df.index)):
+        for i in (mark_place,(df.index)):
             print("\n")
             print(df.iloc[mark_place:mark_place+5].to_string())
             print("\n")
