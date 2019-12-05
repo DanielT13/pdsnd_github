@@ -114,18 +114,18 @@ def time_stats(df):
 
     # display the most common month
     most_common_month = df['month'].mode()[0]
-    print('The month with the most travels is: ' +
-          str(months[most_common_month-1]).title() + '.')
+    print('The month with the most travels is: {}'
+    .format(months[most_common_month-1]).title() + '.')
 
     # display the most common day of week
     most_common_day = df['day_of_week'].mode()[0]
-    print('The most common day of the week is: ' +
-          str(most_common_day) + '.')
+    print('The most common day of the week is: {}'
+    .format(most_common_day) + '.')
 
     # display the most common start hour
     most_common_hour = df['Start Hour'].mode()[0]
-    print('The most common start hour is: ' +
-          str(most_common_hour) + '.')
+    print('The most common start hour is: {}'
+    .format(most_common_hour)+ '.')
 
     print("\nThis took {} seconds.".format((time.time() - start_time)))
     print('-'*40)
@@ -266,7 +266,7 @@ def raw_data(df, mark_place):
 
     # each loop displays 5 lines of raw data
     while True:
-        for i in range(mark_place, len(df.index)):
+        for i in (mark_place,(df.index)):
             print("\n")
             print(df.iloc[mark_place:mark_place+5].to_string())
             print("\n")
