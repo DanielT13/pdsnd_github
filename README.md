@@ -18,5 +18,10 @@ This program was written in Python (version 3.7.1) and relies on the following l
 * pandas==0.23.4
 * numpy==1.15.4
 
+### libraries
+* Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
+
+* NumPy is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays.
+
 ### Credits
 Tchalim M. Daniel
